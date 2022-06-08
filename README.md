@@ -7,13 +7,13 @@
 <a href="#"><img title="SHIRAORI BOT MULTI DEVICE" src="https://img.shields.io/badge/SHIRAORI BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Author" src="https://img.shields.io/badge/Author-Ilman-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/johnparkerg/Botsy"><img title="Author" src="https://img.shields.io/badge/Author-Ilman-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Followers" src="https://img.shields.io/github/followers/ilmanhdyt?color=blue&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Stars" src="https://img.shields.io/github/stars/ilmanhdyt/ShiraoriBOT-Md?color=red&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md/network/members"><img title="Forks" src="https://img.shields.io/github/forks/ilmanhdyt/ShiraoriBOT-Md?color=red&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/ilmanhdyt/ShiraoriBOT-Md?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/johnparkerg/Botsy"><img title="Followers" src="https://img.shields.io/github/followers/ilmanhdyt?color=blue&style=flat-square"></a>
+<a href="https://github.com/johnparkerg/Botsy"><img title="Stars" src="https://img.shields.io/github/stars/ilmanhdyt/Botsy?color=red&style=flat-square"></a>
+<a href="https://github.com/johnparkerg/Botsy/network/members"><img title="Forks" src="https://img.shields.io/github/forks/ilmanhdyt/Botsy?color=red&style=flat-square"></a>
+<a href="https://github.com/johnparkerg/Botsy/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/ilmanhdyt/Botsy?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 ---
@@ -107,8 +107,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/shir
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/johnparkerg/Botsy
+cd Botsy
 npm install
 npm update
 npm index
@@ -124,8 +124,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/johnparkerg/Botsy
+cd Botsy
 yarn
 npm i -g typescript
 tsc -p ./node_modules/@adiwajshing/baileys

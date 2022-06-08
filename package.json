@@ -1,5 +1,5 @@
 {
-    "name": "ShiraoriBOT-Md",
+    "name": "Botsy",
     "version": "0.5.1",
     "description": "Simle Bot WhatsApp with Baileys Multi Device",
     "depecrated": false,
@@ -23,16 +23,16 @@
         "ShiraoriBOT",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/ilmanhdyt/ShiraoriBOT-Md",
+    "homepage": "https://github.com/johnparkerg/Botsy",
     "author": {
         "name": "Ilman"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ilmanhdyt/ShiraoriBOT-Md.git"
+        "url": "git+https://github.com/johnparkerg/Botsy.git"
     },
     "bugs": {
-        "url": "https://github.com/ilmanhdyt/ShiraoriBOT-Md/issues"
+        "url": "https://github.com/johnparkerg/Botsy/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
