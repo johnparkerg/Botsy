@@ -224,7 +224,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       footer: wm,
       mentions: await conn.parseMention(judul),
       title: '',
-      buttonText: "Klik Disini",
+      buttonText: "Click Here",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: false }})
@@ -311,19 +311,19 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari"
+  const time = moment.tz('America/Mexico_City').format('HH')
+  res = "Good morning!"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Good Morning!"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Nide day!"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Good Evening"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Good Night"
   }
   return res
 }
