@@ -27,7 +27,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.stiker_wait = 'Sticker Being generated'
+global.stiker_wait = '⚙️ Generating Sticker ⚙️'
 global.packname = 'Botsy Multi device'
 global.author = 'Ilmanhdyt'
 global.namabot = 'Botsy'
