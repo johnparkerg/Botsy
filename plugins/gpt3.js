@@ -41,8 +41,8 @@ let handler = async (m, { conn, text }) => {
     //   .catch(function (error) {
     //     console.log(error);
     //   });
-    m.reply(numero)
   }
+  m.reply(numero)
 }
 
 // handler.command = /^(tellme)$/i
