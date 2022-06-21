@@ -6,6 +6,7 @@ let handler = async (m, { conn, text }) => {
   var numero = Math.random();
   if (numero <= 0.1) {
     //if (true) {
+    if (!text) text = m.text;
     if (!text) throw 'You must provide a message!'
     var data = JSON.stringify({
       "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\n\nHumano:" + text + "\nBot:",
