@@ -3,7 +3,8 @@ const Axios = require('axios');
 let handler = async (m, { conn, text }) => {
 
   //only execute code if random number is less than 0.5
-  if (Math.random() <= 0.1) {
+  var numero = Math.random();
+  if (numero <= 0.1) {
     //if (true) {
     if (!text) throw 'You must provide a message!'
     var data = JSON.stringify({
@@ -30,16 +31,17 @@ let handler = async (m, { conn, text }) => {
       data: data
     };
 
-    await Axios(config)
-      .then(function (response) {
-        var texto = response.data.choices[0].text.trim()
-        m.reply(texto);
-        //conn.sendMessage(m.chat, { text: response.data.choices[0].text.replace(/^\n|\n$/g, '') },);
-        //conn.sendMessage(m.chat, { text: texto },);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    // await Axios(config)
+    //   .then(function (response) {
+    //     var texto = response.data.choices[0].text.trim()
+    //     m.reply(texto);
+    //     //conn.sendMessage(m.chat, { text: response.data.choices[0].text.replace(/^\n|\n$/g, '') },);
+    //     //conn.sendMessage(m.chat, { text: texto },);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+    m.reply(numero)
   }
 }
 
