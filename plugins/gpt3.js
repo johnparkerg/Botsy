@@ -28,7 +28,7 @@ let handler = async (m, { conn, text }) => {
 
   await Axios(config)
     .then(function (response) {
-      conn.sendMessage(m.chat, response.data.choices[0].text);
+      conn.sendMessage(m.chat, { text: response.data.choices[0].text },);
     })
     .catch(function (error) {
       console.log(error);
