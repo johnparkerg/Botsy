@@ -32,7 +32,7 @@ let handler = async (m, { conn, text }) => {
 
     await Axios(config)
       .then(function (response) {
-        var texto = esponse.data.choices[0].text.replace(/^\n|\n$/g, '')
+        var texto = response.data.choices[0].text.replace(/^\n|\n$/g, '')
         //m.reply(response.data.choices[0].text.replace(/^\n|\n$/g, ''));
         //conn.sendMessage(m.chat, { text: response.data.choices[0].text.replace(/^\n|\n$/g, '') },);
         conn.sendMessage(m.chat, { text: texto },);
