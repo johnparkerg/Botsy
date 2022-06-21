@@ -4,6 +4,7 @@ let handler = async (m, { conn, text }) => {
 
   //only execute code if random number is less than 0.5
   var numero = Math.random();
+  console.log(numero);
   if (numero <= 0.1) {
     //if (true) {
     if (!text) text = m.text;
@@ -19,7 +20,7 @@ let handler = async (m, { conn, text }) => {
       "stop": "Humano:",
       "frequency_penalty": 0.6,
       "best_of": 1,
-      "model": "text-davinci-002",
+      "model": "text-babbage-001",
     });
 
     var config = {
