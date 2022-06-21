@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
     "n": 1,
     "stream": false,
     "logprobs": null,
-    "stop": "\n\n",
+    "stop": "Human:",
     "frequency_penalty": 0.6,
     "best_of": 1,
     "model": "text-davinci-002",
