@@ -28,13 +28,13 @@ let handler = async (m, { conn, text }) => {
 
   await Axios(config)
     .then(function (response) {
-      conn.sendMessage(m.chat, { text: response.data.choices[0].text },);
+      m.reply(response.data.choices[0].text.replace(/^\n|\n$/g, ''));
     })
     .catch(function (error) {
       console.log(error);
     });
 }
 
-handler.command = /^(tellme)$/i
+//handler.command = /^(tellme)$/i
 
 module.exports = handler
