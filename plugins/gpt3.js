@@ -3,7 +3,8 @@ const Axios = require('axios');
 let handler = async (m, { conn, text }) => {
 
   //only execute code if random number is less than 0.5
-  if (Math.random() > 0.1) {
+  //if (Math.random() > 0.1) {
+  if (true) {
     if (!text) throw 'You must provide a message!'
     var data = JSON.stringify({
       "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\n\nHumano:" + text + "\nBot:",
@@ -31,8 +32,8 @@ let handler = async (m, { conn, text }) => {
 
     await Axios(config)
       .then(function (response) {
-        //m.reply(response.data.choices[0].text.replace(/^\n|\n$/g, ''));
-        conn.sendMessage(m.chat, { text: response.data.choices[0].text.replace(/^\n|\n$/g, '') },);
+        m.reply(response.data.choices[0].text.replace(/^\n|\n$/g, ''));
+        //conn.sendMessage(m.chat, { text: response.data.choices[0].text.replace(/^\n|\n$/g, '') },);
       })
       .catch(function (error) {
         console.log(error);
@@ -40,8 +41,8 @@ let handler = async (m, { conn, text }) => {
   }
 }
 
-//handler.command = /^(tellme)$/i
-handler.customPrefix = /(.*?)/i
-handler.command = new RegExp
+handler.command = /^(tellme)$/i
+// handler.customPrefix = /(.*?)/i
+// handler.command = new RegExp
 
 module.exports = handler
