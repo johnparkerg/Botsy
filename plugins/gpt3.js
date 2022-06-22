@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
   if (!text) text = m.text;
   if (numero <= 0.1 && text) {
     var data = JSON.stringify({
-      "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\nHumano: Me llamo " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
+      "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\nHumano: Mi nombre es " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
       "max_tokens": 256,
       "temperature": 0.85,
       "top_p": 1,
