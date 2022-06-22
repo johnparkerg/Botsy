@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
   //only execute code if random number is less than 0.5
   var numero = Math.random();
   if (!text) text = m.text;
-  if (numero <= 0.1 && text) {
+  if (numero <= 1 && text) {
     var data = JSON.stringify({
       "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\nHumano: Mi nombre es " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
       "max_tokens": 256,
@@ -44,8 +44,7 @@ let handler = async (m, { conn, text }) => {
 }
 
 // handler.command = /^(tellme)$/i
-//handler.customPrefix = /.a+/s
-handler.customPrefix = /(bile?k|ban?h|cum?|knt?l|y?|mmk|e|i|o|p|b(a|i)?c?(o|i)?(t|d)?|wibu|p(a)?nt(e)?k|pepe?k)/i
+handler.customPrefix = /[a-zA-z]/s
 handler.command = new RegExp
 
 module.exports = handler
