@@ -44,7 +44,8 @@ let handler = async (m, { conn, text }) => {
 }
 
 // handler.command = /^(tellme)$/i
-handler.customPrefix = /.+/s
+//handler.customPrefix = /.a+/s
+handler.customPrefix = /(bile?k|ban?h|cum?|knt?l|y?|mmk|e|i|o|p|b(a|i)?c?(o|i)?(t|d)?|wibu|p(a)?nt(e)?k|pepe?k)/i
 handler.command = new RegExp
 
 module.exports = handler
