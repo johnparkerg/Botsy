@@ -5,9 +5,9 @@ let handler = async (m, { conn, text }) => {
   //only execute code if random number is less than 0.5
   var numero = Math.random();
   if (!text) text = m.text;
-  if (numero <= 1 && text) {
+  if (numero <= .4 && text) {
     var data = JSON.stringify({
-      "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\nHumano: Mi nombre es " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
+      "prompt": "Bot: Hola Soy un Bot y me encanta platicar y decir cosas.\nHumano: Mi nombre es " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
       "max_tokens": 256,
       "temperature": 0.85,
       "top_p": 1,
