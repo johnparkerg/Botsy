@@ -4,13 +4,10 @@ let handler = async (m, { conn, text }) => {
 
   //only execute code if random number is less than 0.5
   var numero = Math.random();
-  console.log(numero);
-  if (numero <= 0.1) {
-    //if (true) {
-    if (!text) text = m.text;
-    if (!text) throw 'You must provide a message!'
+  if (!text) text = m.text;
+  if (numero <= 0.1 && text) {
     var data = JSON.stringify({
-      "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\n\nHumano:" + text + "\nBot:",
+      "prompt": "Bot: Hola Soy un Bot y te puedo ayudar a conestar lo que sea hablo español muy bien.\nHumano: Me llamo " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
       "max_tokens": 256,
       "temperature": 0.85,
       "top_p": 1,
