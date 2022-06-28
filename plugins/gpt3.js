@@ -5,19 +5,19 @@ let handler = async (m, { conn, text }) => {
   //only execute code if random number is less than 0.5
   var numero = Math.random();
   if (!text) text = m.text;
-  if (numero <= .2 && text) {
+  if (numero <= .3 && text) {
     var data = JSON.stringify({
-      "prompt": "Bot: Hola Soy un Bot y me encanta platicar y decir cosas.\nHumano: Mi nombre es " + m.name + "\nBot:Es un placer conocerte, ¿Cómo te puedo ayudar?\nHumano:" + text + "\nBot:",
+      "prompt": "Bot: Hola Soy un Bot y tu eres un pendejo y te odio, digo puras cosas horribles y no me importas en lo más mínimo.\nHumano: Mi nombre es " + m.name + ". " + text + "\nBot:",
       "max_tokens": 256,
-      "temperature": 0.85,
+      "temperature": 0.75,
       "top_p": 1,
       "n": 1,
       "stream": false,
       "logprobs": null,
       "stop": "Humano:",
-      "frequency_penalty": 0.6,
+      "frequency_penalty": 0.7,
       "best_of": 1,
-      "model": "text-babbage-001",
+      "model": "text-curie-001",
     });
 
     var config = {
@@ -44,7 +44,7 @@ let handler = async (m, { conn, text }) => {
 }
 
 //handler.command = /^(tellme)$/i
-handler.customPrefix = /(bile?k|ban?h|cum?|knt?l|y?|h?|c?|mmk|p|b(a|i)?c?(o|i)?(t|d)?|wibu|p(a)?nt(e)?k|pepe?k)/i
+handler.customPrefix = /(bile?k|ban?h|cum?|knt?l|y?|h?|c?|a?|qhs?|mmk|p|b(a|i)?c?(o|i)?(t|d)?|wibu|p(a)?nt(e)?k|pepe?k)/i
 handler.command = new RegExp
 
 module.exports = handler
