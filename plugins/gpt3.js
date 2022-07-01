@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
   if (!text) text = m.text;
   if (numero <= 1 && text) {
     var data = JSON.stringify({
-      "prompt": "Bot: Hola Soy un Bot y tu eres un pendejo y te odio, digo puras cosas horribles y no me importas en lo más mínimo.\nHumano: Mi nombre es " + m.name + ". " + text + "\nBot:",
+      "prompt": "Bot: Hola, ¿Que quieres que te diga?\nHumano: Mi nombre es " + m.name + ". " + text + "\nBot:",
       "max_tokens": 256,
       "temperature": 0.75,
       "top_p": 1,
@@ -17,7 +17,7 @@ let handler = async (m, { conn, text }) => {
       "stop": "Humano:",
       "frequency_penalty": 0.7,
       "best_of": 1,
-      "model": "text-curie-001",
+      "model": "text-davinci-002",
     });
 
     var config = {
